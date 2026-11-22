@@ -1,0 +1,12 @@
+// Empty means "same origin" (Vite proxy in dev, Express static hosting in production)
+export const SERVER_URL = (import.meta.env.VITE_SERVER_URL || '').replace(/\/$/, '');
+
+// Must match server/src/utils/palette.js, the server rejects anything else
+export const PALETTE = [
+  '#ef4444', '#f97316', '#f59e0b', '#eab308',
+  '#84cc16', '#22c55e', '#10b981', '#14b8a6',
+  '#06b6d4', '#0ea5e9', '#3b82f6', '#6366f1',
+  '#8b5cf6', '#d946ef', '#ec4899', '#f43f5e',
+];
+
+export const NAME_RE = /^[\p{L}\p{N} _-]+$/u;
