@@ -1,4 +1,5 @@
 # Turf - real-time shared grid
+![Turf screenshot](docs/screenshot.png)
 
 A live board of 600 tiles (30 x 20) that everyone online plays on at the same time. Pick a name and a colour, click a tile to capture it, and every other player sees it change instantly.
 
